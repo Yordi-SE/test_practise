@@ -13,6 +13,9 @@ class Testproducts(unittest.TestCase):
     def test_product_negative_quantity(self):
         products = Product('Apple', 10, -5)
         self.assertRaises(ValueError, products.calculate)
+    def test_product_negative_quantity(self):
+        products = Product('Apple', 10, -5)
+        self.assertRaises(ValueError, products.calculate)
             
     def test_productsTotal_zero(self):
         products = Product('Apple', 10, 0)
