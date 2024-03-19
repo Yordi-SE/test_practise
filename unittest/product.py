@@ -7,6 +7,8 @@ class Product:
         self.quantity = quantity
 
     def calculate(self):
+        if self.quantity < 0:
+            raise ValueError('Quantity cannot be negative')
         return self.price * self.quantity
 
 
